@@ -1,0 +1,62 @@
+html {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    color: white;
+}
+
+.border {
+    border: none;
+    background-color: white;
+    font-size: 30px;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+input {
+    display: none;
+}
+
+label {
+    font-size: 30px;
+    position: relative;
+    background-color: white;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+.redirect {
+    display: block;
+    float: left;
+    height: 50px;
+    width: 100px;
+    margin-right: 5px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    border: none;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    position: relative;
+}
+
+
+h2 {
+    color: black;
+    background-color: white;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
