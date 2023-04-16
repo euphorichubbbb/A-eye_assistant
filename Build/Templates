@@ -1,1 +1,42 @@
 
+<link type="text/css" rel="stylesheet" href="{{url_for('static', filename='style.css')}}"/> 
+<title>Disability Assistant</title>
+<center>
+    <h1>Disability Assistant</h1>
+</center>
+<div class="navbar">
+    <form action="/"><a><button class="redirect" id="Home">Home</button></a></form>
+    <form action="/about"><a><button class="redirect">About</button></a></form>
+</div>
+
+
+
+
+
+<center>
+<div class="image">
+<form method="post" action="/" enctype="multipart/form-data">
+    <p>
+        <label>
+            <input class="border" type="file" name="file" autocomplete="off" required>
+            Upload Picture
+        </label>
+    </p>
+    <p>
+        <label>
+            <input class="border" type="submit" value="Submit">
+            Submit
+        </label>
+        
+    </p>
+</form>
+</div>
+</center>
+{% if filename %}
+    <center>
+        <h2>{{tts()}}</h2>
+    </center>
+    <center>
+        <form action="/"><a><button class="redirect" id="Home">Restart</button></a></form>
+    </center>
+{% endif %}
